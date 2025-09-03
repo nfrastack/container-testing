@@ -4,6 +4,32 @@ source /assets/functions/00-container
 prepare_service single
 PROCESS_NAME="nginx"
 
+cat <<EOF
+
+****************************************************************************************
+*                                                                                      *
+*                    END OF LIFE NOTICE AUGUST 18, 2025                                *
+*                               tiredofit/nginx                                        *
+*                                                                                      *
+* This image is no longer maintained as of and will not receive updates.               *
+*                                                                                      *
+* A successor image is available at:                                                   *
+*                                                                                      *
+* Repository | Documentation:                                                          *
+*   - https://github.com/nfrastack/container-nginx                                     *
+*                                                                                      *
+* Image Registries:                                                                    *
+*   - https://hub.docker.com/r/nfrastack/nginx                                         *
+*   - https://github.com/nfrastack/container-nginx/pkgs/container/container-nginx      *
+*                                                                                      *
+* Please visit https://nfrastack.com for more information.                             *
+*                                                                                      *
+****************************************************************************************
+
+EOF
+
+sleep 15
+
 if var_false "${ENABLE_NGINX}" ; then
     print_notice "Disabling Nginx Functionality"
     service_stop 10-nginx

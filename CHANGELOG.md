@@ -1,3 +1,8 @@
+## 6.5.99 2025-09-03 <dave at tiredofit dot ca>
+
+Add EOL Statement for tiredofit/nginx
+
+
 ## 6.5.18 2025-04-26 <dave at tiredofit dot ca>
 
    ### Added
